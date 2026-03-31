@@ -10,4 +10,5 @@
       };
       init.defaultBranch = "main";
     };
+  };
 }

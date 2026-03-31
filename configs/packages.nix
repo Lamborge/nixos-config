@@ -26,8 +26,8 @@
     wget
     neovim
     python315
-    oh-my-fish
     git
+    dust
 
   # APPLICATIONS
     ayugram-desktop
@@ -38,6 +38,9 @@
     gnome-tweaks
     alacritty
     resources
+    prismlauncher
+    pavucontrol
+    gparted
 
   # THEMING
     papirus-icon-theme
