@@ -6,6 +6,7 @@
     ./modules/alacritty.nix
     ./modules/git.nix
     ./modules/gnome.nix
+    ./modules/google-chrome.nix
   ];
 
   home =
