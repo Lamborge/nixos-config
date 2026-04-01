@@ -3,11 +3,9 @@
   programs.obs-studio = {
     enable = true;
 
-    enableVirtualCamera = true;
-
     plugins = with pkgs.obs-studio-plugins; [
       wlrobs
-      obs-background-removal
+      obs-backgroundremoval
       obs-pipewire-audio-capture
       obs-vaapi
       obs-gstreamer

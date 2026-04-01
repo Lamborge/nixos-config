@@ -21,6 +21,7 @@
     #==========
 
     obs-studio.enable = true;
+    obs-studio.enableVirtualCamera = true;
   };
 
   # List packages installed in system profile.
@@ -66,7 +67,7 @@
         gamescope
 	gamemode
       ];
-    };)
+    })
 
   # THEMING
     papirus-icon-theme
