@@ -7,6 +7,8 @@
     ./modules/git.nix
     ./modules/gnome.nix
     ./modules/google-chrome.nix
+    ./modules/obs-studio.nix
+    ./modules/flameshot.nix
   ];
 
   home =

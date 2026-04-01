@@ -1,11 +1,15 @@
 { config, pkgs, ... }:
 {
+
+  nixpkgs.config.allowUnfree = true;
+
   # PROGRAMS
   security.sudo.enable = true;
 
   programs = {
     firefox.enable = true;
 
+    #===STEAM===
     steam = {
       enable = true;
       extraPackages = with pkgs; [ adwaita-icon-theme ];
@@ -13,6 +17,10 @@
     steam.remotePlay.openFirewall = true;
     steam.extraCompatPackages = with pkgs; [ proton-ge-bin ];
     gamemode.enable = true;
+    gamescope.enable = true;
+    #==========
+
+    obs-studio.enable = true;
   };
 
   # List packages installed in system profile.
@@ -28,6 +36,8 @@
     python315
     git
     dust
+    htop
+    lm_sensors
 
   # APPLICATIONS
     ayugram-desktop
@@ -35,12 +45,28 @@
     google-chrome
     element-desktop
     teamspeak6-client
+    prismlauncher
+    pavucontrol
     gnome-tweaks
     alacritty
     resources
-    prismlauncher
-    pavucontrol
     gparted
+    flameshot
+    scanmem
+    libreoffice-fresh
+    obs-studio
+    qbittorrent
+    vlc
+
+    kdePackages.ark
+    kdePackages.kdenlive
+
+    (heroic.override {
+      extraPkgs = pkgs': with pkgs'; [
+        gamescope
+	gamemode
+      ];
+    };)
 
   # THEMING
     papirus-icon-theme
@@ -55,4 +81,6 @@
     resource-monitor
     xwayland-indicator
   ]);
+
+
 }

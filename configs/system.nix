@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 {
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  hardware.cpu.amd.updateMicrocode = true;
+
   # Set your time zone.
   time.timeZone = "Asia/Tbilisi";
 
