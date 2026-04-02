@@ -33,7 +33,7 @@
           family = "JetBrainsMono NFM";
           style = "Bold Italic";
         };
-        size = 12.5;
+        size = 14;
       };
 
       terminal.shell = {

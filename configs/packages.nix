@@ -24,6 +24,11 @@
     obs-studio.enableVirtualCamera = true;
   };
 
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
+
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
@@ -39,6 +44,9 @@
     dust
     htop
     lm_sensors
+    distrobox
+    bat
+    lsd
 
   # APPLICATIONS
     ayugram-desktop

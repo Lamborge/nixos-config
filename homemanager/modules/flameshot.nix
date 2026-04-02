@@ -7,7 +7,7 @@
       General = {
         disabledTrayIcon = true;
 	showStartupLaunchMessage = false;
-	showDesktopNitification = true;
+	showDesktopNotification = true;
 	showSidePanelButton = true;
       };
     };

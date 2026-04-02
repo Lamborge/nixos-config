@@ -13,15 +13,39 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/b3f17d8c-47a0-4161-8fad-46a7eadb9a0d";
+  fileSystems = {
+
+    "/" = { 
+      device = "/dev/disk/by-uuid/b3f17d8c-47a0-4161-8fad-46a7eadb9a0d";
       fsType = "ext4";
     };
   
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/6766-C594";
-    fsType = "vfat";
-    options = [ "umask=0077" ];
+    "/boot" = {
+      device = "/dev/disk/by-uuid/6766-C594";
+      fsType = "vfat";
+      options = [ "umask=0077" ];
+    };
+    
+    "/home/HDD_EXT4" = {
+      device = "UUID=b7cdd919-6246-4c33-84c3-b638e06a637c";
+      fsType = "ext4";
+      options = [ "rw" "nosuid" "nodev" "relatime" "errors=remount-ro" ];
+      noCheck = false;
+    };
+
+    "/home/Games_SSD" = {
+      device = "UUID=0d2b8ee3-93f5-4ee4-a3b7-6ef27fa2d1c3";
+      fsType = "btrfs";
+      options = [ "rw" "relatime" "ssd" "discard=async" "space_cache=v2" "subvol=/" ];
+      noCheck = true;
+    };
+
+    "/home/Games_NVME" = {
+      device = "UUID=eabe14ee-82de-4fb5-bf19-a785aa9c05c6";
+      fsType = "btrfs";
+      options = [ "rw" "relatime" "ssd" "discard=async" "space_cache=v2" "subvol=/" ];
+      noCheck = true;
+    };
   };
 
   swapDevices =

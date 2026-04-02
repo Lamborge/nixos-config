@@ -9,6 +9,7 @@
     ./modules/google-chrome.nix
     ./modules/obs-studio.nix
     ./modules/flameshot.nix
+    ./modules/nixvim.nix
   ];
 
   home =

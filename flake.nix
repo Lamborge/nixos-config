@@ -6,6 +6,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }:
@@ -26,7 +31,13 @@
 	    home-manager.useGlobalPkgs = true;
 	    home-manager.useUserPackages = true;
 
-	    home-manager.users.lamborge = import ./homemanager/home.nix;
+	    home-manager.users.lamborge = {
+	      imports = [
+	        ./homemanager/home.nix
+
+	        inputs.nixvim.homeModules.nixvim
+	      ];
+	    };
 	  }
 	];
       };
