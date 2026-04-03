@@ -24,4 +24,11 @@
     platformTheme = "gnome";
     style = "adwaita-dark";
   };
+
+  #fixing telegram no tray icon issue
+    environment = {
+      extraInit = ''
+        unset QT_QPA_PLATFORMTHEME
+      '';
+    };
 }
