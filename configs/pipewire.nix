@@ -11,8 +11,8 @@
 
     extraConfig.pipewire."10-clock" = {
       "context.properties" = {
-        "default.clock.rate" = 4800;
-        "default.clock.allowed-rates" = [ 44100 4800 9600 ];
+        "default.clock.rate" = 48000;
+        "default.clock.allowed-rates" = [ 44100 48000 96000 ];
         "default.clock.quantum" = 1024;
         "default.clock.min-quantum" = 32;
         "default.clock.max-quantum" = 8192;
