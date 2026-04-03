@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, ... }:
 {
 
   imports = [
@@ -10,6 +10,7 @@
     ./modules/obs-studio.nix
     ./modules/flameshot.nix
     ./modules/nixvim.nix
+    ./modules/easyeffects.nix
   ];
 
   home =

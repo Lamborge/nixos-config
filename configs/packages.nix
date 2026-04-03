@@ -1,6 +1,5 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
-
   nixpkgs.config.allowUnfree = true;
 
   # PROGRAMS
@@ -66,6 +65,7 @@
     obs-studio
     qbittorrent
     vlc
+    easyeffects
 
     kdePackages.ark
     kdePackages.kdenlive
@@ -90,6 +90,4 @@
     resource-monitor
     xwayland-indicator
   ]);
-
-
 }
