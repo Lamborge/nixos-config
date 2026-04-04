@@ -46,6 +46,14 @@
     distrobox
     bat
     lsd
+    # needed for heroic game launcher
+    p7zip
+    cabextract
+    unzip
+    winetricks
+    zenity
+    yad
+    #===============================
 
   # APPLICATIONS
     ayugram-desktop
@@ -66,6 +74,7 @@
     qbittorrent
     vlc
     easyeffects
+    lutris
 
     kdePackages.ark
     kdePackages.kdenlive
