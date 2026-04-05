@@ -46,6 +46,7 @@
     distrobox
     bat
     lsd
+    alsa-tools
     # needed for heroic game launcher
     p7zip
     cabextract

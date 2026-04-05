@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
 
 fonts = {
@@ -9,10 +9,16 @@ fonts = {
     hinting = {
       enable = true;
       style = "slight"; # none, slight, medium, full
-    };
+    };  
     subpixel = {
       rgba = "rgb";
       lcdfilter = "default";
+    };
+
+    defaultFonts = {
+      sansSerif = [ "Noto Sans" ];
+      serif = [ "Noto Serif" ];
+      monospace = [ "Noto Sans Mono" ];
     };
   };
 
