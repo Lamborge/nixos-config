@@ -47,6 +47,7 @@
     bat
     lsd
     alsa-tools
+    rar
     # needed for heroic game launcher
     p7zip
     cabextract
@@ -76,6 +77,7 @@
     vlc
     easyeffects
     lutris
+    aisleriot
 
     kdePackages.ark
     kdePackages.kdenlive

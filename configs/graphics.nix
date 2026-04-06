@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   # GRAPHIC DRIVERS
   hardware.graphics = {

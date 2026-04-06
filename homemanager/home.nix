@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-
   imports = [
     ./modules/fish.nix
     ./modules/alacritty.nix
@@ -11,6 +10,7 @@
     ./modules/flameshot.nix
     ./modules/nixvim.nix
     ./modules/easyeffects.nix
+    ./modules/gtk.nix
   ];
 
   home =

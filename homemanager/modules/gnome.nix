@@ -1,4 +1,4 @@
-{ pkgs, lib, config, ... }:
+{ lib, ... }:
 {
   dconf.settings = {
     "org/gnome/desktop/interface" = {
@@ -8,7 +8,6 @@
       cursor-theme = "Bibata-Original-Classic";
       cursor-size = 24;
       icon-theme = "Papirus-Dark";
-      gtk-theme = "Adwaita";
     };
     "org/gnome/desktop/calendar" = {
       show-weekdate = false;

@@ -13,6 +13,8 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
+  hardware.firmware = [ pkgs.linux-firmware ];
+
   fileSystems = {
 
     "/" = { 

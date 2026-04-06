@@ -16,9 +16,9 @@ fonts = {
     };
 
     defaultFonts = {
-      sansSerif = [ "Noto Sans" ];
+      sansSerif = [ "Adwaita Sans" "Inter" "Noto Sans" ];
       serif = [ "Noto Serif" ];
-      monospace = [ "Noto Sans Mono" ];
+      monospace = [ "Adwaita Mono" "JetBrains Mono" "Noto Sans Mono" ];
     };
   };
 
@@ -43,6 +43,10 @@ fonts = {
     powerline-fonts
     powerline-symbols
     nerd-fonts.jetbrains-mono
+    ubuntu-sans
+    ubuntu-classic
+    ubuntu-sans-mono
+    adwaita-fonts
   ]; #++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 };
 
