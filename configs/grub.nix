@@ -59,7 +59,7 @@ let
         --install \
         --background Grey \
         --resolution 2k \
-        --fontsize 18 \
+        --fontsize 16 \
         --auto
       
       runHook postInstall

@@ -21,11 +21,21 @@
 
     obs-studio.enable = true;
     obs-studio.enableVirtualCamera = true;
+
+    thunderbird.enable = true;
   };
 
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
+  hardware.xone.enable = true; # driver for xbox controller
+
+  virtualisation = { 
+    podman = {
+      enable = true;
+      dockerCompat = true;
+    };
+
+    /*docker = {
+      enable = true;
+    };*/
   };
 
   # List packages installed in system profile.
@@ -55,6 +65,7 @@
     winetricks
     zenity
     yad
+    oversteer
     #===============================
 
   # APPLICATIONS
@@ -78,6 +89,9 @@
     easyeffects
     lutris
     aisleriot
+    winboat
+    (discord.override { withVencord = true; })
+    vscode-fhs
 
     kdePackages.ark
     kdePackages.kdenlive
