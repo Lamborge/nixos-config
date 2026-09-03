@@ -92,6 +92,7 @@
     winboat
     (discord.override { withVencord = true; })
     vscode-fhs
+    lmstudio
 
     kdePackages.ark
     kdePackages.kdenlive
